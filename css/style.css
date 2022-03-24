@@ -192,9 +192,11 @@ ul {
   display: flex;
   align-items: center;
 }
-.header-current {
+.header-current:hover,
+:focus {
   color: var(--link-hover-color);
 }
+
 .header-row:hover,
 :focus {
   color: var(--link-hover-color);
