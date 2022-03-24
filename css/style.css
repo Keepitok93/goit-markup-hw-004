@@ -6,10 +6,10 @@
   --header-color: #212121;
   --color-black: #000000;
   --color-btn-prt: #f5f4fa;
+  --icon-team: #afb1b8;
 
   --margin-calc: margin 30px;
 }
-
 p,
 h1,
 h2,
@@ -19,7 +19,6 @@ h5,
 h6 {
   margin: 0;
 }
-
 ul {
   margin: 0;
   padding: 0;
@@ -27,12 +26,10 @@ ul {
 button {
   cursor: pointer;
 }
-
 body {
   font-family: "Roboto", sans-serif;
   color: var(--color-black);
 }
-
 .about-item {
   width: 270px;
   margin-left: 30px;
@@ -46,7 +43,6 @@ body {
 .about-item-img:first-child {
   margin-left: 0;
 }
-
 .about-list {
   display: flex;
   align-items: center;
@@ -60,28 +56,32 @@ body {
 .about-item-team:last-child {
   margin-right: 0;
 }
-
 .container {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
 }
-
 .header {
   background: var(--color-white);
   padding-top: 24px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
-
-.header-cont {
+.contact {
+  color: var(--color-paragraph);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
   display: flex;
   align-items: center;
   margin-left: auto;
 }
-
+.contact-item + .contact-item {
+  margin-left: 30px;
+}
 .btn {
   font-family: "roboto", sans-serif;
   font-weight: 700;
@@ -108,7 +108,6 @@ body {
 img {
   display: block;
 }
-
 .header-link-logo {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -149,26 +148,23 @@ ul {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-
 .header-container {
   display: flex;
   align-items: center;
 }
-
 .hero {
+  background-image: url(./image.img.jpeg);
   background-color: #2f303a;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
 }
-
 .section {
   padding: 94px 0px;
 }
 .doing {
   padding-top: 0px;
 }
-
 .header-item {
   font-weight: 500;
   font-size: 14px;
@@ -190,16 +186,13 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
 .header-navigation {
   display: flex;
 }
-
 .header-list {
   display: flex;
   align-items: center;
 }
-
 .header-current {
   color: var(--link-hover-color);
 }
@@ -234,7 +227,6 @@ ul {
   letter-spacing: 0.03em;
   color: var(--color-paragraph);
 }
-
 .header-link-mail {
   font-weight: 500;
   font-size: 14px;
@@ -248,7 +240,6 @@ ul {
 .header-link-mail:focus {
   color: var(--link-hover-color);
 }
-
 .header-link-tel {
   font-weight: 500;
   font-size: 14px;
@@ -256,7 +247,6 @@ ul {
   letter-spacing: 0.02em;
   cursor: pointer;
   color: var(--color-paragraph);
-
   display: flex;
   align-items: center;
 }
@@ -283,7 +273,6 @@ ul {
 .team {
   background-color: var(--color-btn-prt);
 }
-
 .team-div {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -296,7 +285,7 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 .footer-link-tel {
   font-weight: 400;
@@ -324,7 +313,6 @@ ul {
 .footer-link-tel:focus {
   color: var(--link-hover-color);
 }
-
 .footer-m-t {
   margin-bottom: 9px;
 }
@@ -352,10 +340,6 @@ ul {
   margin-top: 20px;
   margin-bottom: 9px;
 }
-
-.btn-item {
-}
-
 .h3-about {
   font-weight: 700;
   font-size: 18px;
@@ -383,6 +367,7 @@ ul {
 }
 
 /*----------------Портфолио---------------*/
+
 .btn-list {
   display: flex;
   justify-content: center;
@@ -392,7 +377,6 @@ ul {
   margin-left: 8px;
   border-radius: 4px;
 }
-
 .btn-nav-prtf {
   font-family: "roboto", sans-serif;
   font-weight: 500;
@@ -410,7 +394,6 @@ ul {
   padding-left: 22px;
   padding-right: 22px;
 }
-
 .btn-nav-prtf:focus,
 .btn-nav-prtf:hover {
   color: var(--color-white);
@@ -418,7 +401,6 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-color: var(--link-hover-color);
 }
-
 .prtf {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -439,8 +421,142 @@ ul {
   margin-top: -30px;
 }
 
-.icon-head-line {
-  width: 16px;
-  height: 12px;
-  text-align: center;
+/*----------------Иконки---------------*/
+
+.contact-link {
+  display: flex;
+  align-items: center;
+}
+.contact-link:hover {
+  color: var(--link-hover-color);
+}
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.about-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+}
+.about-icon-item {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color: var(--color-btn-prt);
+  border-radius: 4px;
+}
+.team-social-list {
+  display: flex;
+  justify-content: center;
+}
+.team-social-item + .team-social-item {
+  margin-left: 10px;
+}
+
+.team-social-icon {
+  fill: currentColor;
+}
+.team-social-link {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  color: var(--icon-team);
+}
+.team-social-link:hover {
+  background-color: var(--link-hover-color);
+  color: var(--color-white);
+}
+.team-social-link:focus {
+  background-color: var(--link-hover-color);
+  color: var(--color-white);
+}
+.client {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.client-list {
+  fill: var(--icon-team);
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.client-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid;
+  border-radius: 4px;
+  color: var(--icon-team);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client-item:hover {
+  color: var(--link-hover-color);
+}
+.client-item:focus {
+  color: var(--link-hover-color);
+}
+.client-item + .client-item {
+  margin-left: 30px;
+}
+.client-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+.contact-footer {
+  width: 206px;
+  height: 80px;
+  margin-left: 70px;
+}
+.contact-h2 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  /* text-align: center; */
+  margin-bottom: 20px;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+.contact-list-footer {
+  display: flex;
+}
+
+.contact-link-footer {
+  border-radius: 50%;
+  color: var(--icon-team);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.contact-item-footer + .contact-item-footer {
+  margin-left: 10px;
+}
+.contact-link-footer:hover {
+  background-color: var(--link-hover-color);
+}
+.contact-icon-footer {
+  fill: var(--color-white);
+  width: 20px;
+  height: 20px;
+}
+.flex {
+  display: flex;
 }
