@@ -139,6 +139,9 @@ ul {
 .link {
   color: inherit;
 }
+.current {
+  color: var(--link-hover-color);
+}
 .hero-title {
   color: var(--color-white);
   font-weight: 900;
@@ -192,13 +195,9 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: inherit;
 }
-.header-row {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
+
 .header-navigation {
   display: flex;
 }
@@ -206,19 +205,15 @@ ul {
   display: flex;
   align-items: center;
 }
-.header-current:hover,
-:focus {
-  color: var(--link-hover-color);
-}
 
-.header-row:hover,
-:focus {
-  color: var(--link-hover-color);
-}
 .header-link:hover,
 :focus {
   color: var(--link-hover-color);
 }
+.current {
+  color: var(--link-hover-color);
+}
+
 .about-h2 {
   font-weight: 700;
   font-size: 36px;
@@ -566,6 +561,9 @@ ul {
   margin-left: 10px;
 }
 .contact-link-footer:hover {
+  background-color: var(--link-hover-color);
+}
+.contact-link-footer:focus {
   background-color: var(--link-hover-color);
 }
 .contact-icon-footer {
